@@ -1,13 +1,19 @@
 import React from 'react'
-import { View } from 'react-native'
-import { Text } from './components/UI'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
+import { Provider } from 'react-redux'
+
+import AppNavigator from './navigation/AppNavigator'
+import store from './store'
 
 
 const App = () => {
     return (
-        <View>
-            <Text>Munkazz</Text>
-        </View>
+        <Provider store={store}>
+            <SafeAreaProvider>
+
+                <AppNavigator />
+            </SafeAreaProvider>
+        </Provider>
     )
 }
 
