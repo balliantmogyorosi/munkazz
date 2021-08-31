@@ -1,2 +1,6 @@
 export const LOG_IN_SCREEN = 'LOG_IN_SCREEN'
 export const SIGN_UP_SCREEN = 'SIGN_UP_SCREEN'
+
+export const JOBS_NAVIGATOR = 'JOB_NAVIGATOR'
+export const JOBS_SCREEN = 'JOBS_SCREEN'
+export const JOB_DETAIL_SCREEN = 'JOB_DETAIL_SCREEN'
